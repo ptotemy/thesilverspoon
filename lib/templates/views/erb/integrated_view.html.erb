@@ -1,0 +1,182 @@
+<%%= content_for :head do %>
+<%%= stylesheet_link_tag "/assets/exclusions/jquery_data_table" %>
+
+<%# TODO: Move Script and CSS to unobtrusive files %>
+<script type="text/javascript">
+    $(function() {
+        $('#example').dataTable({
+            "bJQueryUI": true,
+            "sPaginationType": "full_numbers"
+        });
+
+$('form').submit(function() {
+
+                $('form').append("<input type='hidden' name='integrated_view' value='yes'> ");
+                return true;
+
+            });
+
+    })
+</script>
+<%% end %>
+
+<%%= content_for :page_header do %>
+<div class="pull-left" style="border: none;"><%%= image_tag('logo.png') %></div>
+<%% end %>
+
+<div class="row">
+
+  <div class="span4" style="text-align: center">
+    <div class="pageslide_header">
+      <h1>"<%= plural_name.titleize %>"</h1>
+    </div>
+    <br/>
+    <br/>
+    <table>
+      <tr>
+        <td>
+          <a href="#" data-toggle="modal" data-target="#new_form">
+            <%%= image_tag('new.png', :size=>"32x32") %>
+          </a>
+        </td>
+        <td>
+         <a href="#" data-toggle="modal" data-target="#new_form">
+            <h2>Create New</h2>
+          </a>
+
+          <div id="new_form" class="modal hide fade">
+            <div class="modal-header">
+              <a href="#" class="close"> &times; </a>
+
+              <h3>Create new record</h3>
+            </div>
+            <div class ="modal-body">
+              <%%= render 'form' %>
+            </div>
+		</div>
+
+
+            <div id="edit_form" class="modal hide fade">
+            <div class="modal-header">
+              <a href="#" class="close"> &times; </a>
+
+              <h3>Edit a record</h3>
+            </div>
+            <div class="modal-body">
+
+              </div>
+          </div>
+
+            
+            <br>
+            <br>
+
+
+            
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="#" data-toggle="modal" data-target="#upload_form">
+            <%%= image_tag('upload.png', :size=>"32x32") %>
+          </a>
+        </td>
+        <td>
+          <a href="#" data-toggle="modal" data-target="#upload_form">
+            <h2>Upload</h2>
+          </a>
+
+          <div id="upload_form" class="modal hide fade">
+            <div class="modal-header">
+              <a href="#" class="close"> &times; </a>
+
+              <h3>Upload Excel File</h3>
+            </div>
+            <%%= form_tag('/<%= instance_name %>/parse_save_from_excel', :multipart => true) do |f| %>
+            <div class="modal-body">
+              Select an Excel File :
+              <%%= file_field_tag :excel_file %>
+            </div>
+
+            <div class="modal-footer">
+              <%%= submit_tag 'Submit', :class=>"large btn primary pull-left" %>
+            </div>
+            <%% end -%>
+
+          </div>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="<%%=<%= item_path :action => :new %> %>" class="add_new span3">
+            <%%= image_tag('download.png', :size=>"32x32") %>
+          </a>
+        </td>
+        <td>
+          <a href=" <%%=<%= item_path :action => :new %> %>" class="add_new span3">
+            <h2>Download</h2>
+          </a>
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+
+  <div class="span8">
+    <table class="jqueried_table display" cellpadding="0" cellspacing="0" border="0" id="example">
+      <thead>
+      <tr>
+        <%- for attribute in @model_attributes -%>
+            <th><%= attribute.human_name.titleize %></th>
+        <%- end -%>
+         <th>Manage</th>
+      </tr>
+      </thead>
+      <tbody>
+      <%% @<%= instances_name %>.each do |<%= instance_name %>| %>
+      <tr>
+        <%- for attribute in @model_attributes -%>
+            <td style="border-right: 1px solid #d3d3d3">
+              <a href="#" data-toggle="modal" data-target="#show_details"><%%= <%= instance_name %>
+                .<%= attribute.name %> %></a>
+            </td>
+        <%- end %>
+
+        <td class="options">
+     <a href="#" id="<%%= <%= instance_name %>.id %> "class="edit_link" >Edit</a>| 
+<%%= link_to "Destroy", <%= item_path %>_path(:id=><%= instance_name %>.id,:integrated_view=>"yes"),:confirm => 'Are you sure?', :method => :delete %>
+        </td>
+      </tr>
+
+
+      <div id="show_details" class="modal hide fade">
+        <div class="modal-header">
+          <a href="#" class="close"> &times; </a>
+
+          <h3><%%= "<%= singular_name.titleize %>" %></h3>
+        </div>
+        <div class="modal-body">
+          <%- for attribute in model_attributes -%>
+              <p>
+                <strong><%= attribute.human_name.titleize %>:</strong>
+                <%%= <%= instance_name %>.<%= attribute.name %> %>
+              </p>
+
+          <%- end -%>
+        </div>
+
+        <div class="modal-footer">
+          <a href="#" class="close"> Back </a>
+        </div>
+      </div>
+      <%%- end -%>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+<br/>

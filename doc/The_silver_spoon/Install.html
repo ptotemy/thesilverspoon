@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class The_silver_spoon::Install - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/thesilverspoon.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Rails::Generators::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-c-source_root">::source_root</a>
+    
+    <li><a href="#method-i-create_appplication_helper">#create_appplication_helper</a>
+    
+    <li><a href="#method-i-create_images">#create_images</a>
+    
+    <li><a href="#method-i-create_javascript_exclusions">#create_javascript_exclusions</a>
+    
+    <li><a href="#method-i-create_javascripts">#create_javascripts</a>
+    
+    <li><a href="#method-i-create_layouts">#create_layouts</a>
+    
+    <li><a href="#method-i-create_stylesheet">#create_stylesheet</a>
+    
+    <li><a href="#method-i-create_stylesheet_images">#create_stylesheet_images</a>
+    
+    <li><a href="#method-i-create_stylesheets_exclusions">#create_stylesheets_exclusions</a>
+    
+    <li><a href="#method-i-create_uploader">#create_uploader</a>
+    
+    <li><a href="#method-i-insert_devise_code">#insert_devise_code</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../Gemfile~.html">Gemfile~</a>
+  
+    <li class="file"><a href="../README_rdoc.html">README</a>
+  
+    <li class="file"><a href="../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../doc/README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Everything.html">Everything</a>
+  
+    <li><a href="../Everything/Scaffold.html">Everything::Scaffold</a>
+  
+    <li><a href="../The_silver_spoon.html">The_silver_spoon</a>
+  
+    <li><a href="../The_silver_spoon/Install.html">The_silver_spoon::Install</a>
+  
+    <li><a href="../<.html"><</a>
+  
+    <li><a href="../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../Create.html">Create</a>
+  
+    <li><a href="../FileUploader.html">FileUploader</a>
+  
+    <li><a href="../Object.html">Object</a>
+  
+    <li><a href="../Thesilverspoon.html">Thesilverspoon</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class The_silver_spoon::Install</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(*args, &block)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 217</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(*<span class="ruby-identifier">args</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">super</span>
+  <span class="ruby-comment">#now we invokde generators off twitter boootstrap and gritter</span>
+  <span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">Generators</span>.<span class="ruby-identifier">invoke</span>(<span class="ruby-string">'bootstrap:install'</span>)
+  <span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">Generators</span>.<span class="ruby-identifier">invoke</span>(<span class="ruby-string">'gritter:locale'</span>)
+  <span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">Generators</span>.<span class="ruby-identifier">invoke</span>(<span class="ruby-string">'devise:install'</span>)
+  <span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">Generators</span>.<span class="ruby-identifier">invoke</span>(<span class="ruby-string">'devise'</span>, [<span class="ruby-string">&quot;user&quot;</span>])
+  <span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">Generators</span>.<span class="ruby-identifier">invoke</span>(<span class="ruby-string">'devise:views'</span>)
+  <span class="ruby-constant">Rails</span><span class="ruby-operator">::</span><span class="ruby-constant">Generators</span>.<span class="ruby-identifier">invoke</span>(<span class="ruby-string">'cancan:ability'</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-source_root" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">source_root</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="source_root-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 212</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">source_root</span>
+  <span class="ruby-constant">File</span>.<span class="ruby-identifier">expand_path</span>(<span class="ruby-string">&quot;../templates&quot;</span>, <span class="ruby-keyword">__FILE__</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- source_root-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- source_root-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-create_appplication_helper" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_appplication_helper</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_appplication_helper-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 228</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_appplication_helper</span>
+  <span class="ruby-identifier">remove_file</span> <span class="ruby-string">&quot;app/helpers/application_helper.rb&quot;</span>
+  <span class="ruby-identifier">template</span> <span class="ruby-string">'application_helper.rb'</span>, <span class="ruby-string">&quot;app/helpers/application_helper.rb&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_appplication_helper-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_appplication_helper-method -->
+
+    
+      <div id="method-i-create_images" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_images</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_images-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 238</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_images</span>
+
+  <span class="ruby-comment"># copies the standard images into the assets/images folder</span>
+  <span class="ruby-ivar">@images</span>=<span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-ivar">@images</span>= <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">entries</span>(<span class="ruby-node">&quot;#{Install.source_root}/assets/images&quot;</span>)
+  <span class="ruby-ivar">@images</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">image</span><span class="ruby-operator">|</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">image!</span>=<span class="ruby-string">&quot;..&quot;</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">image</span> <span class="ruby-operator">!=</span><span class="ruby-string">&quot;.&quot;</span>
+      <span class="ruby-identifier">copy_file</span> <span class="ruby-node">&quot;assets/images/#{image.to_s}&quot;</span>, <span class="ruby-node">&quot;app/assets/images/#{image}&quot;</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_images-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_images-method -->
+
+    
+      <div id="method-i-create_javascript_exclusions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_javascript_exclusions</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_javascript_exclusions-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 277</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_javascript_exclusions</span>
+
+  <span class="ruby-comment"># copies the sequenced javascript into the assets/javascripts/exclusions folder</span>
+  <span class="ruby-identifier">directory</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/javascripts/exclusions&quot;</span>, <span class="ruby-string">&quot;app/assets/javascripts/exclusions&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_javascript_exclusions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_javascript_exclusions-method -->
+
+    
+      <div id="method-i-create_javascripts" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_javascripts</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_javascripts-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 253</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_javascripts</span>
+
+  <span class="ruby-comment"># copies the standard javascripts into the assets/javascripts folder - Currently hard-coded</span>
+  <span class="ruby-comment">#  : Remove the hardcoding for the javascripts inclusion</span>
+
+  <span class="ruby-identifier">copy_file</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/javascripts/jquery.dataTables.min.js&quot;</span>, <span class="ruby-string">&quot;app/assets/javascripts/jquery.dataTables.min.js&quot;</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_javascripts-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_javascripts-method -->
+
+    
+      <div id="method-i-create_layouts" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_layouts</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_layouts-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 291</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">create_layouts</span>
+<span class="ruby-comment">      #remove hardcoding and make a loop for including all files in this folder
+</span>      <span class="ruby-identifier">remove_file</span> <span class="ruby-string">&quot;app/views/layouts/application.html.erb&quot;</span>
+      <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/layouts/application.html.erb&quot;</span>, <span class="ruby-string">&quot;app/views/layouts/application.html.erb&quot;</span>
+      <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/layouts//dummy_data.html.erb&quot;</span>, <span class="ruby-string">&quot;app/views/layouts/scaffold.html.erb&quot;</span>
+      <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/layouts/information_page.html.erb&quot;</span>, <span class="ruby-string">&quot;app/views/layouts/information_page.html.erb&quot;</span>
+      <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/layouts/pageslide_form_at.html.erb&quot;</span>, <span class="ruby-string">&quot;app/views/layouts/pageslide_form_at.html.erb&quot;</span>
+      <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/layouts/welcome.html.erb&quot;</span>, <span class="ruby-string">&quot;app/views/layouts/welcome.html.erb&quot;</span>
+
+    <span class="ruby-keyword">end</span></pre>
+          </div><!-- create_layouts-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_layouts-method -->
+
+    
+      <div id="method-i-create_stylesheet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_stylesheet</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_stylesheet-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 262</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_stylesheet</span>
+  <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/stylesheets/silverspoon.css.scss&quot;</span>, <span class="ruby-string">&quot;app/assets/stylesheets/silverspoon.css.scss&quot;</span>
+  <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/stylesheets/base_classes.css.scss&quot;</span>, <span class="ruby-string">&quot;app/assets/stylesheets/base_classes.css.scss&quot;</span>
+  <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/stylesheets/silverspoon.css.scss&quot;</span>, <span class="ruby-string">&quot;app/assets/stylesheets/information_page.css.scss&quot;</span>
+  <span class="ruby-identifier">template</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/stylesheets/jquery-ui-1.8.17.custom.css&quot;</span>, <span class="ruby-string">&quot;app/assets/stylesheets/jquery-ui-1.8.17.custom.css&quot;</span>
+
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_stylesheet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_stylesheet-method -->
+
+    
+      <div id="method-i-create_stylesheet_images" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_stylesheet_images</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_stylesheet_images-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 283</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_stylesheet_images</span>
+
+  <span class="ruby-comment"># copies the dependent css images into the assets/stylesheets/images folder</span>
+  <span class="ruby-identifier">directory</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/stylesheets/images&quot;</span>, <span class="ruby-string">&quot;app/assets/stylesheets/images&quot;</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_stylesheet_images-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_stylesheet_images-method -->
+
+    
+      <div id="method-i-create_stylesheets_exclusions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_stylesheets_exclusions</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_stylesheets_exclusions-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 271</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_stylesheets_exclusions</span>
+
+  <span class="ruby-comment"># copies the sequenced css into the assets/stylesheets/exclusions folder</span>
+  <span class="ruby-identifier">directory</span> <span class="ruby-node">&quot;#{Install.source_root}/assets/stylesheets/exclusions&quot;</span>, <span class="ruby-string">&quot;app/assets/stylesheets/exclusions&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_stylesheets_exclusions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_stylesheets_exclusions-method -->
+
+    
+      <div id="method-i-create_uploader" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create_uploader</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create_uploader-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 233</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create_uploader</span>
+  <span class="ruby-comment">#creates the uploader ruby file using carrierwave</span>
+  <span class="ruby-identifier">template</span> <span class="ruby-string">'file_uploader.rb'</span>, <span class="ruby-string">&quot;app/uploaders/file_uploader.rb&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- create_uploader-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create_uploader-method -->
+
+    
+      <div id="method-i-insert_devise_code" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">insert_devise_code</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="insert_devise_code-source">
+            <pre><span class="ruby-comment"># File lib/thesilverspoon.rb, line 304</span>
+    <span class="ruby-keyword">def</span> <span class="ruby-identifier">insert_devise_code</span>
+      <span class="ruby-identifier">inject_into_file</span> <span class="ruby-string">&quot;config/application.rb&quot;</span>,<span class="ruby-string">'require &quot;devise&quot;'</span>,<span class="ruby-value">:after=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&quot;require File.expand_path('../boot', __FILE__)&quot;</span>
+        <span class="ruby-identifier">inject_into_file</span> <span class="ruby-string">&quot;app/assets/stylesheets/application.css&quot;</span>,<span class="ruby-string">'*=require_directory'</span>,<span class="ruby-value">:before=</span><span class="ruby-operator">&gt;</span><span class="ruby-string">&quot;*/&quot;</span>
+<span class="ruby-identifier">append_to_file</span> <span class="ruby-string">&quot;app/assets/javascripts/application.js&quot;</span>,<span class="ruby-string">'//= require bootstrap'</span>
+  
+    <span class="ruby-keyword">end</span></pre>
+          </div><!-- insert_devise_code-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- insert_devise_code-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
