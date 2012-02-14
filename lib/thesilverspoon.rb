@@ -303,7 +303,7 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
     def create_javascript_exclusions
 
       # copies the sequenced javascript into the assets/javascripts/exclusions folder
-      directory "#{Install.source_root}/assets/javascripts/exclusions", "app/assets/javascripts/exclusions"
+  #    directory "#{Install.source_root}/assets/javascripts/exclusions", "app/assets/javascripts/exclusions"
     end
 
     def create_stylesheet_images
