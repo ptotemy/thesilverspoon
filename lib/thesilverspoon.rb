@@ -330,7 +330,7 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
     def insert_devise_code
       inject_into_file "config/application.rb", 'require "devise"', :after=>"require File.expand_path('../boot', __FILE__)\n"
     #  inject_into_file "config/application.rb", "require 'bootstrap-sass'\n", :after=>"require File.expand_path('../boot', __FILE__)\n"
-      inject_into_file "config/application.rb", "require 'bootstrapp-rails'\n", :after=>"require 'rails/all'\n"
+      inject_into_file "config/application.rb", "require 'bootstrap-rails'\n", :after=>"require 'rails/all'\n"
       inject_into_file "config/application.rb", "require 'gritter'\n", :after=>"require 'rails/all'\n"
       inject_into_file "app/assets/stylesheets/application.css", "*=require_directory\n", :before=>"*/"
       inject_into_file "app/assets/stylesheets/application.css", "*=require bootstrap\n", :before=>"*/"
