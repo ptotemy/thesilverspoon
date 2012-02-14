@@ -287,8 +287,8 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
 
     def create_stylesheet
       template "#{Install.source_root}/assets/stylesheets/silverspoon.css.scss", "app/assets/stylesheets/silverspoon.css.scss"
-      template "#{Install.source_root}/assets/stylesheets/base_classes.css.scss", "app/assets/stylesheets/base_classes.css.scss"
-      template "#{Install.source_root}/assets/stylesheets/silverspoon.css.scss", "app/assets/stylesheets/information_page.css.scss"
+     # template "#{Install.source_root}/assets/stylesheets/base_classes.css.scss", "app/assets/stylesheets/base_classes.css.scss"
+      #template "#{Install.source_root}/assets/stylesheets/silverspoon.css.scss", "app/assets/stylesheets/information_page.css.scss"
       template "#{Install.source_root}/assets/stylesheets/jquery-ui-1.8.17.custom.css", "app/assets/stylesheets/jquery-ui-1.8.17.custom.css"
 
 
