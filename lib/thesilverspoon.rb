@@ -282,6 +282,8 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
       #  : Remove the hardcoding for the javascripts inclusion
 
       copy_file "#{Install.source_root}/assets/javascripts/jquery.dataTables.min.js", "app/assets/javascripts/jquery.dataTables.min.js"
+	      copy_file "#{Install.source_root}/assets/javascripts/bootstrap.js", "app/assets/javascripts/bootstrap.js"
+
 
     end
 
@@ -290,6 +292,8 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
      # template "#{Install.source_root}/assets/stylesheets/base_classes.css.scss", "app/assets/stylesheets/base_classes.css.scss"
       #template "#{Install.source_root}/assets/stylesheets/silverspoon.css.scss", "app/assets/stylesheets/information_page.css.scss"
       template "#{Install.source_root}/assets/stylesheets/jquery-ui-1.8.17.custom.css", "app/assets/stylesheets/jquery-ui-1.8.17.custom.css"
+      template "#{Install.source_root}/assets/stylesheets/bootstrap.css", "app/assets/stylesheets/bootstrap.css"
+
 
 
     end

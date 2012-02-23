@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path("../lib", __FILE__)ru
 require "thesilverspoon/version"
 
 Gem::Specification.new do |s|
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
 
 
 
-s.add_dependency 'anjlab-bootstrap-rails', '>= 2.0'
+
 s.add_dependency 'gritter'
 s.add_dependency 'spreadsheet'
 s.add_dependency 'carrierwave'
