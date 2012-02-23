@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)ru
+$:.push File.expand_path("../lib", __FILE__)
 require "thesilverspoon/version"
 
 Gem::Specification.new do |s|

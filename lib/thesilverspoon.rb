@@ -222,7 +222,7 @@ module Thesilverspoon
     def initialize(*args, &block)
       super
       #now we invokde generators off twitter boootstrap and gritter
-      Rails::Generators.invoke('bootstrap:install')
+    #  Rails::Generators.invoke('bootstrap:install')
       Rails::Generators.invoke('gritter:locale')
       Rails::Generators.invoke('devise:install')
       Rails::Generators.invoke('devise', ["user"])
@@ -289,7 +289,7 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
 
     def create_stylesheet
       template "#{Install.source_root}/assets/stylesheets/silverspoon.css.scss", "app/assets/stylesheets/silverspoon.css.scss"
-     # template "#{Install.source_root}/assets/stylesheets/base_classes.css.scss", "app/assets/stylesheets/base_classes.css.scss"
+     #template "#{Install.source_root}/assets/stylesheets/base_classes.css.scss", "app/assets/stylesheets/base_classes.css.scss"
       #template "#{Install.source_root}/assets/stylesheets/silverspoon.css.scss", "app/assets/stylesheets/information_page.css.scss"
       template "#{Install.source_root}/assets/stylesheets/jquery-ui-1.8.17.custom.css", "app/assets/stylesheets/jquery-ui-1.8.17.custom.css"
       template "#{Install.source_root}/assets/stylesheets/bootstrap.css", "app/assets/stylesheets/bootstrap.css"
@@ -334,11 +334,11 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
     def insert_devise_code
       inject_into_file "config/application.rb", 'require "devise"', :after=>"require File.expand_path('../boot', __FILE__)\n"
     #  inject_into_file "config/application.rb", "require 'bootstrap-sass'\n", :after=>"require File.expand_path('../boot', __FILE__)\n"
-      inject_into_file "config/application.rb", "require 'bootstrap-rails'\n", :after=>"require 'rails/all'\n"
+     # inject_into_file "config/application.rb", "require 'bootstrap-rails'\n", :after=>"require 'rails/all'\n"
       inject_into_file "config/application.rb", "require 'gritter'\n", :after=>"require 'rails/all'\n"
       inject_into_file "app/assets/stylesheets/application.css", "*=require_directory\n", :before=>"*/"
-      inject_into_file "app/assets/stylesheets/application.css", "*=require bootstrap\n", :before=>"*/"
-      append_to_file "app/assets/javascripts/application.js", '//= require bootstrap'
+    #  inject_into_file "app/assets/stylesheets/application.css", "*=require bootstrap\n", :before=>"*/"
+     # append_to_file "app/assets/javascripts/application.js", '//= require bootstrap'
       inject_into_file "app/controllers/application_controller.rb", "before_filter :authenticate_user!\n", :after=>"  protect_from_forgery\n"
 
 
