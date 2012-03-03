@@ -1,3 +1,3 @@
 module Thesilverspoon
-  VERSION = "0.0.35"
+  VERSION = "1.0.0"
 end
