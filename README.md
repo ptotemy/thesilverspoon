@@ -8,7 +8,6 @@ This gem preps a new Rails app with some of the best Rails gems and Jquery sweet
 * <b>Rails Admin</b> for System Management : https://github.com/sferik/rails_admin 
 * <b>Devise</b> for Authentication : https://github.com/plataformatec/devise
 * <b>Cancan</b> for Authorization : https://github.com/ryanb/cancan
-* <b>Bootstrapped</b> for Layout Design : https://github.com/entropillc/bootstrapped
 * <b>NiftyGenerators</b> for Form Design : https://github.com/ryanb/nifty-generators
 * <b>Gritter</b> for Notifications : https://github.com/RobinBrouwer/gritter
 * <b>Carrierwave</b> for File Uploading : https://github.com/jnicklas/carrierwave
@@ -74,11 +73,7 @@ The app has been started off with the standard Rails layout. The Silver Spoon al
 rails generate nifty:layout
 ```
 
-* To use the the Bootstrapped layout
- 
-```console
-rails generate bootstrapped:layout
-```
+
 
 * To revert back to the default Rails layout
 
@@ -104,11 +99,7 @@ This creates a special layout for the scaffold, over-riding your application lay
 rails generate nifty:scaffold Model [parameters]
 ```
 
-* To use the the Bootstrapped scaffold
- 
-```console
-rails generate bootstrapped:scaffold Model [parameters]
-```
+
 
 * To use the default Rails scaffold
 
