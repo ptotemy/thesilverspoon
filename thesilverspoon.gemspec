@@ -31,6 +31,7 @@ s.add_dependency 'carrierwave'
 s.add_dependency 'devise'
 s.add_dependency 'cancan'
 s.add_dependency 'nifty-generators'
+s.add_dependency 'cells'
 
 
 
