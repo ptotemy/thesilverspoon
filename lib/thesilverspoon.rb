@@ -276,6 +276,10 @@ inject_into_file "config/routes.rb",s,:after=>"# root :to => 'welcome#index'\n"
 
     end
 
+def install_quiet_assets
+      copy_file "#{Install.source_root}/assets/quiet_assets.rb", "config/initializers/quiet_assets.rb"
+end
+
     def create_javascripts
 
       # copies the standard javascripts into the assets/javascripts folder - Currently hard-coded
